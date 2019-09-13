@@ -1,0 +1,92 @@
+---
+title: "data lab1"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+title: "ds-202 lab 1"
+output: html_document
+---
+# Understanding Concepts 
+1.git is control sysytem which can store and keep track your data and github is a hosting service which is repositories for git 
+2,they can not use independently due to the relation , github is service for data or source using git 
+3,the storege for data online in the server ,the way we can create the repository in git by 
+pwd
+cd floder 
+pwd
+mkdir
+cd new floder 
+git init
+
+
+x = c (47,34,33,65,37,NA,43,NA,11,NA,23,NA)
+sum(is.na(x))
+
+
+age = c(25,30,45,60,12,41)
+smoker = c('T','F','T','F','F','F')
+weight = c(120,137,0,168,91,142)
+example_data = data.frame(age,smoker,weight)
+weight = c(120,137,0,168,91,142)
+weight[which(weight==0)] <-150
+weight
+
+
+eval=FALSE
+  mean(is.na(x))
+  x / sum(x, na.rm = TRUE)
+
+  MEAN_NA <- function(x){
+  return(mean(is.na(x)))
+}
+MEAN_NA(c(47,34,33,65,37,NA,43,NA,11,NA,23,NA))
+  SUMNA <- function(x){
+  x / sum(x, na.rm = TRUE)
+}
+SUMNA(c(47,34,33,65,37,NA,43,NA,11,NA,23,NA))
+  
+  
+  both_na <- function(x, y){
+  x <- is.na(x)
+  y <- is.na(y)
+  return(sum(x & y))
+}
+both_na(c(1,NA,3,4,NA,5), c(5,NA,3,NA,1))
+
+
+
+
+vec200 <- rep(NA, 200)
+
+vec200[seq(vec200) %% 2 == 0] <- 0
+
+vec200[seq(vec200) %% 2 == 1] <- 1
+
+vec200
+
+
+
+
+
